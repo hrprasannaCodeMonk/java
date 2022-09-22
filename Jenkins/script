@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('QA') {
+            steps {
+               git branch: 'main', url: 'https://github.com/hrprasannaCodeMonk/java.git'
+            }
+        }
+         stage('UAT') {
+            steps {
+               git branch: 'main', url: 'https://github.com/hrprasannaCodeMonk/java.git'
+            }
+        }
+         stage('Prod') {
+            steps {
+               git branch: 'main', url: 'https://github.com/hrprasannaCodeMonk/java.git'
+            }
+        }
+    }
+}
+
